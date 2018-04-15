@@ -23,5 +23,5 @@ public:
     void putScore(){ cout<<score; }
 };
 
-
+//testing
 #endif //TRAINING_PROGRAM_PLAYER_H
