@@ -9,11 +9,20 @@ class Question {
 
 public:
     string question,ans;
+    int score;
 
     virtual void setQuestion() = 0;
 
     void setAns(string ans){
         this->ans= std::move(ans);
+    }
+
+    void setScore(int score){
+        this->score=score;
+    }
+
+    int getScore(){
+        return score;
     }
 
     bool checkAns(const string &ans) {
