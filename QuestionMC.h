@@ -1,7 +1,7 @@
 //
 // Created by KASHISH on 15-04-2018.
 //
-
+#include "Question.h"
 class QuestionMC: public Question {
 
 public:
