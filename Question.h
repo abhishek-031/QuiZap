@@ -9,7 +9,7 @@ class Question {
 
 public:
     string question,ans;
-    int score;
+    int points;
 
     virtual void setQuestion() = 0;
 
@@ -17,15 +17,15 @@ public:
         this->ans= std::move(ans);
     }
 
-    void setScore(int score){
-        this->score=score;
+    void setPoints(int points){
+        this->points=points;
     }
 
-    int getScore(){
-        return score;
+    int getPoints(){
+        return points;
     }
 
-    bool checkAns(const string &ans) {
+    bool checkAns(const string ans) {
         return ans == this->ans;
     }
 };

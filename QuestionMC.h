@@ -1,11 +1,12 @@
 //
 // Created by KASHISH on 15-04-2018.
 //
-#include "Question.h"
 class QuestionMC: public Question {
 
 public:
-    void setQuestion(string question,string option){
-        this.question=question+"\n"+option;
+    int nOptions; // number of options
+    QuestionMC(){nOptions=0;}
+    void setQuestion(string question){
+        this->question=question;
     }
 };
