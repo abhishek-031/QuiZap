@@ -5,11 +5,11 @@
 #include <iostream>
 using namespace std;
 class Player {
-    char firstName[20];
-    char lastName[20];
+    string firstName;
+    string lastName;
     int score;
 public:
-    Player(){ score=0;firstName[0]='\0',lastName[0]='\0'; }
+    Player(){ score=0; firstName="",lastName="";}
     void incScore(int x){ score+=x; }
     void decScore(int x){ score-=x; }
     void getFirstName(){ cin>>firstName; }
