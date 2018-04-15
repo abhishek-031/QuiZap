@@ -17,7 +17,7 @@ int main() {
     cout<<"What file stores your questions?\n";
     cin>>fileName;
     fstream testFile;
-    testFile.open(fileName,ios::in);
+    testFile.open(R"(C:\Users\LENOVO\Desktop\QuiZap\)" +fileName+(".txt"),ios::in);
     if(!testFile.is_open())
         cout<<"error opening the file\n";
     getline(testFile,maxQuestions);

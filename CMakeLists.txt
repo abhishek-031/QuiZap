@@ -3,4 +3,4 @@ project(Training_Program)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Training_Program main.cpp Player.h)
+add_executable(Training_Program main.cpp Player.h Question.h)
